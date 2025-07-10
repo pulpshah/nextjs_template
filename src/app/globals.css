@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@pulp/ui/styles";
 
 :root {
   --background: #ffffff;
