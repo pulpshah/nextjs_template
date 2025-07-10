@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npm run login-codeartifact",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "login-codeartifact": "node scripts/login-codeartifact.js"
   },
   "dependencies": {
+    "@pulp/ui": "^0.1.21",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
